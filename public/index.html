@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembretes de Remédios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💊 Lembretes de Medicamentos</h1>
+        
+        <form id="reminderForm">
+            <div class="form-group">
+                <label for="medicine">Nome do Remédio:</label>
+                <input type="text" id="medicine" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Horário:</label>
+                <input type="time" id="time" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Seu WhatsApp:</label>
+                <input type="tel" id="phone" placeholder="5511999999999" required>
+            </div>
+            
+            <button type="submit">Agendar Lembrete</button>
+        </form>
+        
+        <div id="remindersList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
